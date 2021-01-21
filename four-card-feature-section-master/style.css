@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 0;
+    line-height: 3rem;
+    margin: 2rem;
+    background-color: hsl(0, 0%, 98%);
+  }
+  
+  h1,
+  h4 {
+    color: hsl(234, 12%, 34%);
+  }
+  
+  h3,
+  p {
+    color: hsl(229, 6%, 66%);
+    font-weight: unset;
+    text-align: left;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .header {
+    max-width: 67.5rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .header_primary {
+    font-size: 40px;
+    font-weight: 200;
+  }
+  
+  .header_secondary {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .header_details {
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+  } 
+
+   .main-container > div {
+    flex: 1 1 0;
+  }
+
+    .main-container > div img {
+    padding-top: 1rem;
+    float: right;
+  }
+
+  .card{
+    margin: 20px 10px;
+    padding: 30px 10px;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 7px;
+    border-top: 4px solid;
+    text-align: right;
+    box-shadow: 0px 7px 10px hsl(229, 6%, 66%);
+}
+
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .card_Sup {
+    margin:20px 20px; 
+    border-top:6px solid hsl(180, 62%, 55%);
+  }
+  
+  .card_Team {
+    margin: 20px 0;
+    border-top:6px solid hsl(0, 78%, 62%);
+  }
+  
+  .card_Cal {
+    border-top:6px solid hsl(212, 86%, 64%);
+    margin: 20px 20px;
+  }
+  
+  .card_karma {
+    border-top:6px solid hsl(34, 97%, 64%);
+    margin: 20px 0;
+  }
+  
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  }
+    
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+  
+@media (max-width: 1024px){
+    .main-container{
+        flex-direction: column;
+    }
+    .card{
+        margin: 20px 0px;
+    }
+    .header_primary,.header_secondary{
+        font-size: 26px;
+    }
+}
