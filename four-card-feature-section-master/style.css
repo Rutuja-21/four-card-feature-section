@@ -71,10 +71,6 @@ html {
     align-items: center;
   } 
 
-   .main-container > div {
-    flex: 1 1 0;
-  }
-
     .main-container > div img {
     padding-top: 1rem;
     float: right;
